@@ -380,6 +380,18 @@ input[type="number"] {
     border-style: dashed;
 }
 
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.yes-no {
+  display: flex;
+  gap: 30px;
+}
+
 .form-container input[type="submit"] {
     width: 100px;
 }
@@ -418,4 +430,67 @@ input[type="number"] {
     border-color: #334155;
     transform: translate(0, -1%);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px, rgba(0, 0, 0, 1) 0px 1px 2px;
+}
+
+.remove-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/yellow-remove.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 0;
+  transition: 0.1s ease;
+}
+
+.remove-button:hover {
+  transform: scale(1.05);
+  background-image: url(./images/remove.svg);
+}
+
+/* .remove-button:hover::after {
+  position: absolute;
+  content: "Remove?";
+  top: -50%;
+  right: -60%;
+  color:#adde52 ;
+} */
+
+.read-button {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/unread.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 0;
+  transition: 0.1s ease;
+}
+
+.read-button:hover {
+  transform: scale(1.05);
+  background-image: url(./images/read.svg);
+}
+
+/* .read-button:hover::after {
+  position: absolute;
+  content: "Read?";
+  top: -60%;
+  right: -35%;
+  color:#ffba7a;
+} */
+
+.read {
+  border-left: 1px solid;
+  border-left-width: 8px;
+  border-color:#adde52 ;
+  transform: translate(0, -1%);
+  box-shadow: #adde52  0px 1px 3px, #adde52  0px 1px 2px;
+  transition: 0.1s ease-in-out;
 }

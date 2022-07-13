@@ -14,11 +14,24 @@
             <form action="" method="post" id="add-book">
                 <div class="form-container">
                     <label for="name">Book Name</label>
-                    <input type="text" id="name" name="name" autocomplete="off">
+                    <input type="text" id="name" name="name" autocomplete="off" required>
                     <label for="author">Author</label>
                     <input type="text" id="author" name="author" autocomplete="off">
                     <label for="page-number">Number of Pages</label>
                     <input type="number" id="page-number" name="page-number" autocomplete="off">
+                    <div class="radio-buttons">
+                        <label for="is-read">Have you read this book?</label>
+                        <div class="yes-no">
+                            <div class="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="is-read" id="yes" value="yes" required>
+                            </div>
+                            <div class="no">
+                                <label for="no">No</label>
+                                <input type="radio" name="is-read" id="no" value="no" required>
+                            </div>
+                        </div>
+                    </div>
                     <input type="submit" id="submit" name="submit">
                 </div>
             </form>
